@@ -62,7 +62,28 @@ The above command will start the server and you should see output similar to the
 Listening on port 5000
 You can then access the API server from your web browser or using tools like curl or postman.
 
+
+# Running the client server
+To run the client server, use the command below:
+
+```bash
+cd client
+example ==>C:\Users\john doe\Desktop\New folder\merntod\client>
+npm start
+```
+The above command will start the server and you should see output on the port 3000
+
+```bash
+type http://localhost:3000 in the browser 
+```
+
+Now interact with the ui 
+
+
 # all apis detailed documentaion for server is below
 ```bash
 https://documenter.getpostman.com/view/21366405/2s93sgWAAt
 ```
+
+
+
