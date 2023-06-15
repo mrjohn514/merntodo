@@ -63,5 +63,6 @@ Listening on port 5000
 You can then access the API server from your web browser or using tools like curl or postman.
 
 # all apis detailed documentaion for server is below
-
-
+```bash
+https://documenter.getpostman.com/view/21366405/2s93sgWAAt
+```
