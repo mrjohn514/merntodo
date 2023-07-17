@@ -205,6 +205,13 @@ ul {
   margin-top: 0.5rem;
 }
 
+.nform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 select {
   padding: 8px;
   border-radius: 4px;

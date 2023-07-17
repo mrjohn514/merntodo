@@ -6,8 +6,15 @@ import { toast } from 'react-toastify'
 import { deleteTask } from '../services/api'
 import { updateTask } from '../services/api'
 import { getAllTasks } from '../services/api'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Home = ({ user, setUser }) => {
+  const navigate = useNavigate()
+
+  const toPomodoro = (todo) => {
+    navigate('/pomodoro', { state: todo })
+  }
+
   // Define state variables for the priority and status filters
   const [priorityFilter, setPriorityFilter] = useState('')
   const [statusFilter, setStatusFilter] = useState('')
@@ -223,7 +230,7 @@ const Home = ({ user, setUser }) => {
       )}
 
       {/* List of Todo Items */}
-      <div className="form">
+      <div className="form nform">
         <h2>All Todo Items</h2>
         {/* Priority Filter */}
         <div className="filter-container">
@@ -278,6 +285,15 @@ const Home = ({ user, setUser }) => {
                 className="btn btn-block"
               >
                 Delete
+              </button>
+
+              <button
+                className="btn btn-block"
+                onClick={() => {
+                  toPomodoro(todo)
+                }}
+              >
+                Pomodoro
               </button>
             </div>
           </div>

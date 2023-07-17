@@ -7,6 +7,7 @@ import Register from './components/register'
 import Login from './components/login'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Pomodoro from './components/pomodoro/pomodoro'
 
 const App = () => {
   const info = localStorage.getItem('user')
@@ -28,6 +29,7 @@ const App = () => {
             path="/login"
             element={<Login user={user} setUser={setUser} />}
           />
+          <Route path="/pomodoro" element={<Pomodoro />} />
         </Routes>
       </BrowserRouter>
     </>

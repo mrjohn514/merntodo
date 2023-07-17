@@ -73,7 +73,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .nav-header h {
@@ -94,7 +94,7 @@ nav {
   transform: rotate(90deg);
 }
 .logo {
-  height: 80px;
+  height: 50px;
 }
 .links .li-link {
   color: var(--grey-700);
@@ -127,7 +127,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.8rem;
   }
   .nav-header {
     padding: 0;
